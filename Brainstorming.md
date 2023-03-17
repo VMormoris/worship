@@ -18,7 +18,8 @@
 * Noob cultist
 * First time cultist
 * Virgin cultist
+* Cultist in training
+* Internship with the Devil/Satan
 * Chatgpt:
     * Infernal Devotion
     * Cult of Lucifer
-    * 
