@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InterlocutorScript : MonoBehaviour
+public abstract class InterlocutorScript : MonoBehaviour
 {
     public string[] Conversations;
     
-    private int mIndex = -1;
-
-    virtual public void StartConversation()
+    public void StartConversation()
     {
         DialogueSystem dialogueSystem = GameContext.Instance.DialogPanel.GetComponent<DialogueSystem>();
-        dialogueSystem.StartConversation(Conversations[++mIndex]);
+        int index = FindNextIndex();
+        if(index != -1)
+            dialogueSystem.StartConversation(Conversations[index]);
     }
+
+    protected abstract int FindNextIndex();
 
 }

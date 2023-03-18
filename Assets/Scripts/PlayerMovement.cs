@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float Velocity = 10.0f;
+    public bool CanMove = true;
 
     Vector3 mTarget;
     

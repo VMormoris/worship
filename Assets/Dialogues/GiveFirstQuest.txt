@@ -8,4 +8,5 @@
 2 Accept[[FirstQuestAccepted = true]];Decline
 3 Of course my lord[End];Maybe some other time
 1 If you decline I'm gonna take your blood instead
+4 Damn, I'm screwed...
 2 Accept[[FirstQuestAccepted = true]]

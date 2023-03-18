@@ -7,7 +7,8 @@ public enum LineType
     Main = 0,
     Other,
     Choice,
-    Answer
+    Answer,
+    Inner
 }
 
 public struct Line
