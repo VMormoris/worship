@@ -3152,7 +3152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1738598596
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3436,8 +3436,12 @@ MonoBehaviour:
   NumberOfCats: 3
   HaveTalkedToDrunkGuy: 0
   HaveTalkedToHooker: 0
+  HaveTalkedToGranny: 0
   GotBottle: 0
   GotWatch: 0
+  DrunkGuyFooled: 0
+  HookerFooled: 0
+  GrannyFooled: 0
 --- !u!1 &1941842105
 GameObject:
   m_ObjectHideFlags: 0
