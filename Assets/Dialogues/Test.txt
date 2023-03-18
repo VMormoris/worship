@@ -2,4 +2,10 @@
 1 Mortaaaal, what do you want?
 0 My only goal in this life is to serve you...
 0 What can I do to earn your trust?
-2 Accept;Decline
+1 For starters you should bring 5 cats.
+1 I need their blood...
+1 Can you do it?
+2 Accept[[FirstQuestAccepted = true]];Decline
+3 Of course my lord[End];Maybe some other time
+1 If you decline I'm gonna take your blood instead
+2 Accept[[FirstQuestAccepted = true]]

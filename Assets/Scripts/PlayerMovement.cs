@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         const float desired = 0.2f * 0.2f;
-        if (Math.SquareDistance(transform.position, mTarget) <= desired)
+        if (Utils.SquareDistance(transform.position, mTarget) <= desired)
             transform.position = mTarget;
     }
 

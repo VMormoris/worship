@@ -6,7 +6,8 @@ public enum LineType
 {
     Main = 0,
     Other,
-    Choice
+    Choice,
+    Answer
 }
 
 public struct Line
@@ -21,16 +22,15 @@ public struct Line
     }
 }
 
-public static class Parser
+public static class Utils
 {
-
     public static Line[] ReadDialogue(string filename)
     {
         string filepath = string.Format("{0}/Dialogues/{1}.txt", Application.dataPath, filename);
-        string [] inlines = File.ReadAllLines(filepath);
+        string[] inlines = File.ReadAllLines(filepath);
         List<Line> outLines = new List<Line>();
 
-        foreach(string line in inlines)
+        foreach (string line in inlines)
         {
             int code = int.Parse(line.Substring(0, 2).Trim());
             string speech = line.Substring(2);
@@ -40,4 +40,27 @@ public static class Parser
         return outLines.ToArray();
     }
 
+    public static string Trim(string str)
+    {
+        string outstr = "";
+        foreach(char c in str)
+        {
+            if (c != ' ')
+                outstr += c;
+        }
+        return outstr;
+    }
+
+    public static float SquareDistance(Vector2 p0, Vector2 p1)
+    {
+        Vector2 temp = p0 - p1;
+        return temp.x * temp.x + temp.y * temp.y;
+    }
+
+    public static float SquareDistance(Vector3 p0, Vector3 p1)
+    {
+        Vector3 temp = p0 - p1;
+        return temp.x * temp.x + temp.y * temp.y + temp.z * temp.z;
+    }
 }
+
