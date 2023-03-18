@@ -6,6 +6,7 @@ using UnityEngine;
 public class DialogueSystem : MonoBehaviour
 {
     //public float Duration = 2.0f;
+    public GameObject Character;
     public GameObject MainBubble;
     public GameObject InnerBubble;
     public GameObject OtherBubble;
@@ -121,6 +122,7 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            Character.SetActive(false);
             GameContext.Instance.PlayerInput.enabled = true;
         }
     }
@@ -133,13 +135,15 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            Character.SetActive(false);
             GameContext.Instance.PlayerInput.enabled = true;
         }
 
         if(choice < mCommands.Count)
         {
             string cmd = mCommands[choice];
-            GameContext.Instance.SetField("FirstQuestAccepted", "true");
+            string[] parsed = cmd.Split('=');
+            GameContext.Instance.SetField(parsed[0], parsed[1]);
         }
     }
 

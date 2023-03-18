@@ -1,12 +1,11 @@
-0 My lord! I finally found you...
-1 Mortaaaal, what do you want?
-0 My only goal in this life is to serve you...
-0 What can I do to earn your trust?
-1 For starters you should bring 5 cats.
-1 I need their blood...
-1 Can you do it?
+0 My lord, What do you need of me?
+1 Mortal, I'm in need of a bath.
+0 Tell me master what should I do?
+1 Bring me 3 cats.
+1 So I can cleanse in their blood.
 2 Accept[[FirstQuestAccepted = true]];Decline
-3 Of course my lord[End];Maybe some other time
-1 If you decline I'm gonna take your blood instead
-4 Damn, I'm screwed...
+3 As you wish my lord.[End];It's very difficult to find cats in this hour.
+1 Should I use yours instead?
+4 Shiiit!
 2 Accept[[FirstQuestAccepted = true]]
+3 I shall return with 3 cats.

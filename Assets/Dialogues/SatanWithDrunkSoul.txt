@@ -1,0 +1,7 @@
+1 What smells so foul?
+0 It's marinated my lord.
+1 Are you making fun of me?
+0 Nononononononono
+0 It's just that, the streets are empty.
+1 Hmmmmm, it will have to do.
+2 Placeholder[[NotFinishFirstQuest = false]]

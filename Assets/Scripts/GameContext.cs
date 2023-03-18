@@ -12,7 +12,16 @@ public class GameContext : MonoBehaviour
 
     // ********************* Dialogue Variables *********************
     public bool FirstQuestAccepted = false;
-    public bool NotFinishFirsQuest = true;
+    public bool NotFinishFirstQuest = true;
+    public int NumberOfCats = 0;
+    public bool HaveTalkedToDrunkGuy = false;
+    public bool HaveTalkedToHooker = false;
+    public bool HaveTalkedToGranny = false;
+    public bool GotBottle = false;
+    public bool GotWatch = false;
+    public bool DrunkGuyFooled = false;
+    public bool HookerFooled = false;
+    public bool GrannyFooled = false;
     // **************************************************************
 
     // ********************* Singleton Paradigm *********************

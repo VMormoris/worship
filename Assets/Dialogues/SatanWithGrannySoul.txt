@@ -1,0 +1,8 @@
+1 Are you bringing me expired food.
+0 But my looord...
+1 Could you find something better?
+0 The streets are empty.
+1 Grrrrrrr...
+1 It's gonna leave a bad after taste.
+1 But whatever.
+2 Placeholder[[NotFinishFirstQuest = false]]

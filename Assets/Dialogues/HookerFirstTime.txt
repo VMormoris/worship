@@ -1,0 +1,5 @@
+0 Hey there...
+1 Tsk. Go away!
+1 You are not my type.
+4 Wait all night then, you b***.
+2 Placeholder[[HaveTalkedToHooker = true]]

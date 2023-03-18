@@ -21,7 +21,8 @@ public class PlayerInputScript : MonoBehaviour
             Vector3 target = mCam.ScreenToWorldPoint(coords);
             target.z = 0.0f;
             PlayerMovement script = GetComponent<PlayerMovement>();
-            script.MoveTo(target);
+            if(script != null)
+                script.MoveTo(target);
         }
         else if(Input.GetMouseButtonUp(0))
         {
