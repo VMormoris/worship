@@ -14,7 +14,9 @@ public class RoomChange : MonoBehaviour
 
     public void ExitRoom()
     {
-        if (GameContext.Instance.NotFinishFirstQuest) SceneManager.LoadScene("CatsSquare");
+        int index = SceneManager.GetActiveScene().buildIndex;
+        if (!GameContext.Instance.NotFinishSecondQuest) SceneManager.LoadScene("PriestHouse");
+        else if (GameContext.Instance.NotFinishFirstQuest) SceneManager.LoadScene("CatsSquare");
         else SceneManager.LoadScene("TownSquare");
     }
 

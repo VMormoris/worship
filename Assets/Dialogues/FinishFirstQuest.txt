@@ -5,4 +5,4 @@
 1 You can go and bring me some food.
 2 Accept[[NotFinishFirstQuest = false]]
 0 Of course my lord.
-4 Hope I can find someone stupid enough to follow me.
+4 Hope I can find someone stupid enough to follow me.[[SecondQuestAccepted = true]]

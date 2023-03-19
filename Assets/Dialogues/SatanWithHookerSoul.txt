@@ -3,3 +3,5 @@
 0 You deserve only the best.[[NotFinishSecondQuest = false]]
 1 I will feast tonight.
 1 I can't wait to eat her.
+1 Now I want to party.
+1 Summon Beelzebub...

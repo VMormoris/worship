@@ -306,6 +306,12 @@ MonoBehaviour:
   - GiveFirstQuest
   - WaitingFirstQuest
   - FinishFirstQuest
+  - WaitingSecondQuest
+  - WaitingThirdQuest
+  - SatanWithGrannySoul
+  - SatanWithHookerSoul
+  - SatanWithDrunkSoul
+  - FinishDialogue
   Character: {fileID: 342322459}
 --- !u!1 &43434985
 GameObject:
@@ -1415,7 +1421,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 53dc1ddd348b46a46864c5f51cfafac9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ece0f6da598e184d988bf49c22f3d80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2205,7 +2211,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9fdaf36a3a6db674a8f120006d3072f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0686502d324e8c439d25f74d509b98a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2961,7 +2967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793504118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.71, y: 1.19, z: 0.03359753}
+  m_LocalPosition: {x: -7.16, y: 1.24, z: 0.03359753}
   m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
   m_ConstrainProportionsScale: 1
   m_Children: []

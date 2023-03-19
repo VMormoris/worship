@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PriestHouse.unity
     guid: 86a9a758aa7e2574c88564b5ea32f8ba
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: d64bd8b51e0309547895f39c76858fbc
   m_configObjects: {}

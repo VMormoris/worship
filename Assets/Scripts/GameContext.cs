@@ -15,14 +15,17 @@ public class GameContext : MonoBehaviour
     public bool FirstQuestAccepted = false;
     public bool NotFinishFirstQuest = true;
     public bool NotFinishSecondQuest = true;
+    public bool NotFinishThirdQuest = true;
     public int NumberOfCats = 0;
     public bool HaveTalkedToDrunkGuy = false;
     public bool HaveTalkedToHooker = false;
     public bool HaveTalkedToGranny = false;
+    public bool HaveTalkedToPriest = false;
     public bool GotBottle = false;
     public bool GotWatch = false;
     public bool GotCollar = false;
     public bool GotRope = false;
+    public bool GotPriest = false;
     public bool GotCat0 = false, GotCat1 = false, GotCat2 = false; 
     public bool DrunkGuyFooled = false;
     public bool HookerFooled = false;
