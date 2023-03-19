@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8f5f40af2ce2be444befb6ed2d00f82d
+  - enabled: 1
     path: Assets/Scenes/SatanRoom.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CatsSquare.unity
+    guid: 505967bf18caf7c44ac2c1cfa9527719
+  - enabled: 1
+    path: Assets/Scenes/TownSquare.unity
+    guid: 681ed1b387cb1a64f95f2c3690752480
+  - enabled: 1
+    path: Assets/Scenes/PriestHouse.unity
+    guid: 86a9a758aa7e2574c88564b5ea32f8ba
   m_configObjects: {}

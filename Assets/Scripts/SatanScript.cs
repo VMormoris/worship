@@ -13,7 +13,9 @@ public class SatanScript : InterlocutorScript
     {
         if (!GameContext.Instance.FirstQuestAccepted) return GiveFirstQuest;
         else if (GameContext.Instance.NumberOfCats == 3) return GotCats;
-        else if (!GameContext.Instance.NotFinishFirstQuest) return WaitingFirstQuest;
+        else if (GameContext.Instance.NotFinishFirstQuest) return WaitingFirstQuest;
         else return -1;
     }
+
+    public override void ConversationEnd() { if (GameContext.Instance.FirstQuestAccepted) GameContext.Instance.ExitRoom.SetActive(true); }
 }

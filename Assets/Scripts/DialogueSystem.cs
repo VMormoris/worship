@@ -16,16 +16,21 @@ public class DialogueSystem : MonoBehaviour
     private int mIndex = 0;
     private int mChoice = -1;
     private List<string> mCommands = new List<string>();
+    private bool mArrowState;
 
-    //private void Start()
-    //{
-    //    StartConversation("Test");
-    //}
+    void Start()
+    {
+        GameContext.Instance.DialogPanel = gameObject;
+        gameObject.SetActive(false);
+    }
 
     public void StartConversation(string filename)
     {
         gameObject.SetActive(true);
         GameContext.Instance.PlayerInput.enabled = false;
+
+        mArrowState = GameContext.Instance.ExitRoom.activeSelf;
+        GameContext.Instance.ExitRoom.SetActive(false);
 
         mCurrentDialogue = Utils.ReadDialogue(filename);
         mIndex = 0 ;
@@ -123,6 +128,8 @@ public class DialogueSystem : MonoBehaviour
         {
             gameObject.SetActive(false);
             Character.SetActive(false);
+            GameContext.Instance.ExitRoom.SetActive(mArrowState);
+            GameContext.Instance.Interlocutor.ConversationEnd();
             GameContext.Instance.PlayerInput.enabled = true;
         }
     }
@@ -130,20 +137,23 @@ public class DialogueSystem : MonoBehaviour
     public void SelectChoice(int choice)
     {
         mChoice = choice;
+        
+        if (choice < mCommands.Count)
+        {
+            string cmd = mCommands[choice];
+            string[] parsed = cmd.Split('=');
+            GameContext.Instance.SetField(parsed[0], parsed[1]);
+        }
+
         if (++mIndex < mCurrentDialogue.Length)
             Show(mCurrentDialogue[mIndex]);
         else
         {
             gameObject.SetActive(false);
             Character.SetActive(false);
+            GameContext.Instance.ExitRoom.SetActive(mArrowState);
+            GameContext.Instance.Interlocutor.ConversationEnd();
             GameContext.Instance.PlayerInput.enabled = true;
-        }
-
-        if(choice < mCommands.Count)
-        {
-            string cmd = mCommands[choice];
-            string[] parsed = cmd.Split('=');
-            GameContext.Instance.SetField(parsed[0], parsed[1]);
         }
     }
 
