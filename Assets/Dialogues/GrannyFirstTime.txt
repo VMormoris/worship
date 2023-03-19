@@ -10,5 +10,4 @@
 0 Let me take you to them.
 1 Something about you is to suspicious, I don't believe you!
 4 Darn it!
-4 I might find something left from the cats.
-2 Placeholder[[HaveTalkedToGranny = true]]
+4 I might find something left from the cats.[[HaveTalkedToGranny = true]]

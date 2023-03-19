@@ -13,7 +13,6 @@ public class CatInterlocutor : InterlocutorScript
         if (sNextIndex == 3)
             sNextIndex = 0;
 
-        Debug.Log("Index: " + mIndex + ", Name: " + gameObject.name);
         if (mIndex == 0 && GameContext.Instance.GotCat1) gameObject.SetActive(false);
         else if (mIndex == 1 && GameContext.Instance.GotCat2) gameObject.SetActive(false);
         else if (mIndex == 2 && GameContext.Instance.GotCat0) gameObject.SetActive(false);

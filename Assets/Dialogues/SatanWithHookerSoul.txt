@@ -1,6 +1,5 @@
 1 What a gourmet choice.
 0 Thank you my lord.
-0 You deserve only the best.
+0 You deserve only the best.[[NotFinishSecondQuest = false]]
 1 I will feast tonight.
 1 I can't wait to eat her.
-2 Placeholder[[NotFinishFirstQuest = false]]

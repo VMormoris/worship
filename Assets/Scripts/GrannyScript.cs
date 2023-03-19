@@ -16,6 +16,7 @@ public class GrannyScript : InterlocutorScript
 
     protected override int FindNextIndex()
     {
+        GameContext instance = GameContext.Instance;
         if (GameContext.Instance.GotCollar) return FollowMe;
         else if (GameContext.Instance.HaveTalkedToGranny) return Blabering;
         else if (!GameContext.Instance.NotFinishFirstQuest) return SearchingCats;

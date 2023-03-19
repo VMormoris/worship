@@ -1,4 +1,3 @@
 1 Zzzzzz...
 4 You have to fight fire with fire!
-0 Just wait, I'm gonna wake you up.
-2 Placeholder[[HaveTalkedToDrunkGuy = true]]
+0 Just wait, I'm gonna wake you up.[[HaveTalkedToDrunkGuy = true]]

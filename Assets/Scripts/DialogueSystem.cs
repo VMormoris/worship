@@ -60,7 +60,17 @@ public class DialogueSystem : MonoBehaviour
                 }
                 bubble.SetActive(true);
                 obubble.SetActive(false);
-                bubble.GetComponentInChildren<TextMeshProUGUI>().text = line.Speech;
+                string speech = line.Speech;
+                if (speech.Contains("[["))
+                {
+                    int start = speech.IndexOf('[');
+                    string command = speech.Substring(start + 2, speech.IndexOf(']') - start - 2);
+                    speech = speech.Substring(0, start);
+                    command = Utils.Trim(command);
+                    string[] parsed = command.Split('=');
+                    GameContext.Instance.SetField(parsed[0], parsed[1]);
+                }
+                bubble.GetComponentInChildren<TextMeshProUGUI>().text = speech;
                 break;
             case LineType.Answer:
                 {
