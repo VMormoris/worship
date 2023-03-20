@@ -1,5 +1,6 @@
 4 Time to wake you up.
-0 Pssst
-1 Dude you are awesome!
-0 Come with me I have more.[[DrunkGuyFooled = true]]
+0 Pssst!
+1 Dude! You are awesome!
+4 I know, right?
+0 Come with me, I have more back in my place.[[DrunkGuyFooled = true]]
 1 Oh yeaaaaah!

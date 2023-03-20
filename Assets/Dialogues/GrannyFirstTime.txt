@@ -1,13 +1,14 @@
 0 Hello, grandma. How are you doing?
 0 Can I help you with anything?
 1 Why are you walking in your pijamas?
-0 I feel comfortable with these clothes.
+0 Umm. They are comfortable.
+4 And kick-ass!
 1 I feel comfortable with my dear kitties...
-1 ... but there are nowhere to be found!
-0 Hahahahahaha (nervous laugh)
+1 ... but they are nowhere to be found!
+0 Hahahahahaha (nervous)
 1 You haven't seen them, have you?
-0 Actually I have.
+0 Actually, I have.
 0 Let me take you to them.
-1 Something about you is to suspicious, I don't believe you!
+1 Something about you is too suspicious, I don't believe you!
 4 Darn it!
 4 I might find something left from the cats.[[HaveTalkedToGranny = true]]

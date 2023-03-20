@@ -1,5 +1,6 @@
 4 Yeah, check me now, I'm fabulous.
 1 Hi sweetheart.
+0 Good evening, lovely.
 0 Would you like to go somewhere...
-0 ... quiter?[[HookerFooled = true]]
-1 Sure thing...
+0 ... quieter?[[HookerFooled = true]]
+1 Hmm. Sure thing sweet boy.

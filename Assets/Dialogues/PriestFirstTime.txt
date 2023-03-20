@@ -1,6 +1,9 @@
-1 How is it? An this ungodly hour...
-0 Hi grumps, give the keys to the church I need candles.
-1 Kids these days.
+1 Who is it at this ungodly hour...
+0 Hi gramps, can you give the keys to the church?
+1 What???
+0 Umm. I need some candles.
+0 It's urgent.
+1 Kids these days...
 1 Is it halloween?
 0 I. Need. Candles.[[HaveTalkedToPriest = true]]
 1 Go away you little punk.

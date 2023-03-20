@@ -1,8 +1,13 @@
 1 What smells so foul?
-0 It's marinated my lord.
+0 It's... Marinated my lord.
 1 Are you making fun of me?
-0 Nononononononono
-0 It's just that, the streets are empty.[[NotFinishSecondQuest = false]]
-1 Hmmmmm, it will have to do.
-1 Now I want to party.
-1 Summon Beelzebub...
+0 Nononononononono...
+0 It's just that, It's hard to find 
+0 Delicacies that suit your taste at this hour.[[NotFinishSecondQuest = false]]
+1 Hmmmmm, it will have to do, then.
+1 Don't disappoint me next time.
+1 Now... I want to party.
+1 Summon me Beelzebub...
+0 My lord... I don't have any candles left...
+1 What kind of satanist doesn't have extra candles?
+0 Haha, yes. I'm sure I had some left. My bad.

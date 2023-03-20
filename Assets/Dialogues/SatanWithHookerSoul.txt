@@ -1,7 +1,15 @@
-1 What a gourmet choice.
-0 Thank you my lord.
+1 What a gourmet choice...
+0 Thank you, my lord.
 0 You deserve only the best.[[NotFinishSecondQuest = false]]
 1 I will feast tonight.
-1 I can't wait to eat her.
-1 Now I want to party.
-1 Summon Beelzebub...
+1 Can't wait to taste her flesh.
+4 Wish I could too... 
+1 Now... I would like to party.
+1 Summon me Beelzebub...
+0 My lord, we ran out of candles.
+1 You call yourself a satanist?
+1 And you don't have enough candles?
+4 Oh, f***!
+0 I am getting some right now, lord.
+0 You shall party tonight.
+1 Goooood... 

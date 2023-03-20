@@ -1,8 +1,8 @@
 1 I'm pleased, Mortal.
 0 Your desire is my will.
 1 Hmmmm...
-1 As I take my bath
-1 You can go and bring me some food.
+1 As I take my bath, go and bring me some food.
 2 Accept[[NotFinishFirstQuest = false]]
 0 Of course my lord.
+1 MEOOWOOOOOOOOW!
 4 Hope I can find someone stupid enough to follow me.[[SecondQuestAccepted = true]]
