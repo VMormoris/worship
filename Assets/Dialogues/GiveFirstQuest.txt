@@ -1,12 +1,12 @@
-0 My lord, What do you need of me?
-1 Mortal, I'm in need of a bath.
-0 Tell me master, what should I do?
-1 Bring me three cats.
-1 I want to cleanse in their blood.
+0 My lord, What do you need of me?\0
+1 Mortal, I'm in need of a bath.\1
+0 Tell me master, what should I do?\2
+1 Bring me three cats.\3
+1 I want to cleanse in their blood.\4
 2 Accept[[FirstQuestAccepted = true]];Decline
-3 As you wish my lord.[End];It's very difficult to find cats at this hour.
-1 Should I use you instead?
-4 Shiiit!
-0 Hahaha (Nervous)
+3 As you wish my lord.\5[End];It's very difficult to find cats at this hour.\6
+1 Should I use you instead?\7
+4 Shiiit!\8
+0 Hahaha (Nervous)\9
 2 Accept[[FirstQuestAccepted = true]]
-3 I shall return with three cats.
+3 I shall return with three cats.\10

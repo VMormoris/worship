@@ -12,6 +12,8 @@ public class DialogueSystem : MonoBehaviour
     public GameObject OtherBubble;
     public GameObject Choices;
 
+    public AudioClip[] VoiceLines;
+
     private Line[] mCurrentDialogue;
     private int mIndex = 0;
     private int mChoice = -1;
@@ -70,6 +72,15 @@ public class DialogueSystem : MonoBehaviour
                     string[] parsed = command.Split('=');
                     GameContext.Instance.SetField(parsed[0], parsed[1]);
                 }
+                if(speech.Contains('\\'))
+                {
+                    int index = speech.IndexOf('\\');
+                    int voiceline = int.Parse(speech.Substring(index + 1));
+                    speech = speech.Substring(0, index);
+                    AudioSource source = GetComponent<AudioSource>();
+                    source.clip = VoiceLines[voiceline];
+                    source.Play();
+                }
                 bubble.GetComponentInChildren<TextMeshProUGUI>().text = speech;
                 break;
             case LineType.Answer:
@@ -86,6 +97,15 @@ public class DialogueSystem : MonoBehaviour
                         choice = choice.Substring(0, choice.IndexOf('['));
                         end = true;
                     }
+                    if (choice.Contains('\\'))
+                    {
+                        int index = choice.IndexOf('\\');
+                        int voiceline = int.Parse(choice.Substring(index + 1));
+                        choice = choice.Substring(0, index);
+                        AudioSource source = GetComponent<AudioSource>();
+                        source.clip = VoiceLines[voiceline];
+                        source.Play();
+                    }
                     MainBubble.GetComponentInChildren<TextMeshProUGUI>().text = choice;
                     mChoice = -1;
                     if (end)
@@ -93,12 +113,24 @@ public class DialogueSystem : MonoBehaviour
                     break;
                 }
             case LineType.Other:
-                MainBubble.SetActive(false);
-                Choices.SetActive(false);
-                InnerBubble.SetActive(false);
-                OtherBubble.SetActive(true);
-                OtherBubble.GetComponentInChildren<TextMeshProUGUI>().text = line.Speech;
-                break;
+                {
+                    MainBubble.SetActive(false);
+                    Choices.SetActive(false);
+                    InnerBubble.SetActive(false);
+                    OtherBubble.SetActive(true);
+                    string t = line.Speech;
+                    if (t.Contains('\\'))
+                    {
+                        int index = t.IndexOf('\\');
+                        int voiceline = int.Parse(t.Substring(index + 1));
+                        t = t.Substring(0, index);
+                        AudioSource source = GetComponent<AudioSource>();
+                        source.clip = VoiceLines[voiceline];
+                        source.Play();
+                    }
+                    OtherBubble.GetComponentInChildren<TextMeshProUGUI>().text = t;
+                    break;
+                }
             case LineType.Choice:
                 {
                     MainBubble.SetActive(false);
