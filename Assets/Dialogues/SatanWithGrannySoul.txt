@@ -1,7 +1,7 @@
 1 Are you bringing me expired food???
 0 But my looord...
 1 Couldn't you find something better?
-0 There is no one on the streets...[[NotFinishFirstQuest = false]]
+0 There is no one on the streets...[[NotFinishSecondQuest = false]]
 1 Grrrrrrr...
 1 It's gonna leave a bad after taste.
 1 Bring me REAL food!
